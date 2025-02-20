@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background:#111111;
+    color: #fcfbfb;
+}
+
+.nav-text {
+    color: #fcfbfb !important;
+    text-decoration: none;
+    position: relative; /* Needed for the pseudo-element */
+    font-weight: 500;
+}
+
+.nav-text::after {
+    content: "";
+    position: absolute;
+    left: 50%;  /* Start from the middle */
+    bottom: -3px; /* Adjust distance below text */
+    width: 0%;  /* Initially hidden */
+    height: 2px; /* Thickness of the underline */
+    background-color: #651919; /* Underline color */
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out; /* Animate width and position */
+    transform: translateX(-50%); /* Centering trick */
+}
+
+.nav-text:hover::after {
+    width: 100%; /* Expand to full width */
+    left: 50%;  /* Stay centered while growing */
+}
+
+.card__box {
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+
+.card__box:hover {
+    /* box-shadow: 0 0 2rem 0 #343434; */
+    transform: translateY(-12px); /* Moves the box up by 10px */
+}
+
+
+.skill__card {
+    transition: transform 0.4s ease-out; /* Smooth transition */
+    background-color: aliceblue;
+}
+
+.skill__card:hover {
+    transform: scale(1.05) translateY(-10px); /* Slight zoom out & move up */
+}
+
+.skill__page{
+    background-color: #000000;
+}
+
+
+.Contact__page{
+    background-color: #141313;
+    height: 100vh;
+    padding: 50px  100px;
+}
+
+.contact__card{
+    box-shadow: 4px 8px 8px rgba(44, 44, 44, 0.438);
+}
+
+.form__page input::placeholder{
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.form__page textarea::placeholder{
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.form__page-inputField{
+    border: none;
+    outline: none;
+    background-color: rgb(16, 16, 16);
+    color: #fcfcfc;
+    /* border-bottom: 1px solid #fcfcfc; */
+    border-radius: 14px !important;
+    box-shadow: 4px 4px 4px 1px rgba(63, 63, 63, 0.955);
+}
+
+.form__page button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+}
+
+.form__page button:hover{
+    background-color: rgb(21, 21, 21);
+    color: rgb(123, 35, 4);
+}
