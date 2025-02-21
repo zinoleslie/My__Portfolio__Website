@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     background:#111111;
     color: #fcfbfb;
+    scroll-behavior: smooth;
 }
 
 .nav-text {
@@ -97,3 +98,85 @@ html, body {
     background-color: rgb(21, 21, 21);
     color: rgb(123, 35, 4);
 }
+
+.btn__findMe {
+    padding: 12px 24px; /* Bigger buttons */
+    font-size: 1rem; /* Slightly larger text */
+}
+
+/* Remove border, shadow, and background */
+.custom-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+/* Make the navbar toggle icon white */
+.custom-toggler .navbar-toggler-icon {
+    filter: brightness(0) invert(1) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================== media quary  ====================================*/
+@media screen and (max-width: 480px) {
+    .nav-text {
+        position: relative; /* Ensures the pseudo-element is positioned relative to text */
+        display: inline-block; /* Keeps the text width constrained */
+        /* border: 2px solid white; */
+        width: 70px;
+        text-align: center;
+    }
+
+    .nav-text::after {
+        content: "";
+        position: absolute;
+        left: 1;  /* Starts exactly at the left of the text */
+        bottom: -3px; /* Spacing below the text */
+        width: 0;  /* Initially hidden */
+        height: 2px; /* Thickness of the underline */
+        background-color: #651919; /* Underline color */
+        transition: width 0.4s ease-in-out; /* Smooth animation */
+    }
+
+    .nav-text:hover::after {
+        width: 60%; /* Expands fully beneath the text */
+    }
+
+
+
+    .Contact__page{
+        background-color: #141313;
+        height: 100vh;
+        padding: 0;
+    }
+
+
+    .skill__card{
+        width: 100% !important;
+    }
+
+    .skill__card div{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+
