@@ -17,16 +17,21 @@ const Projects = () => {
 
                 {/* Project 1 */}
                 <div className="col-12 col-md-6 d-flex justify-content-center">
-                    <Cards 
-                        title="Voting Application System" 
+                    <Cards
+                        title="Voting Application System"
                         description="A Voting Application System built using React, Node.js, and MongoDB."
                         image="../votingAPP__image.jpg"
+                        linkProf={'https://votingapp-frontend-project.onrender.com'}
                     />
                 </div>
 
                 {/* Project 2 */}
                 <div className="col-12 col-md-6 d-flex justify-content-center">
-                    <Cards />
+                    <Cards
+                        title={'School Management System'}
+                        description={'A School Management System built using React, Node.js, and MongoDB.'}
+
+                    />
                 </div>
 
             </div>
