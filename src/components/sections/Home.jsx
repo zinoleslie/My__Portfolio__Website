@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Link } from 'react-scroll'
+import Nav from 'react-bootstrap/Nav';
 
 const Home = () => {
     return (
@@ -20,15 +22,15 @@ const Home = () => {
                         {/* Social Links */}
                         <div className='mt-4'>
                             <h4>Find Me On</h4>
-                            <a href="#" className='fs-2 me-3' style={{ textDecoration: 'none', color: 'white' }}><FaLinkedin /></a>
-                            <a href="#" className='fs-2' style={{ textDecoration: 'none', color: 'white' }}><FaGithub /></a>
+                            <a href="http://www.linkedin.com/in/gifted-zino-leslie-25a6a9330" target='_blank' className='fs-2 me-3' style={{ textDecoration: 'none', color: 'white' }}><FaLinkedin /></a>
+                            <a href="https://github.com/zinoleslie" target='_blank' className='fs-2' style={{ textDecoration: 'none', color: 'white' }}><FaGithub /></a>
                         </div>
 
                         {/* Buttons */}
                         <div className="mt-4">
-                            <button className="btn btn-light me-2 "><b>View My Work</b></button>
-                            <button className="btn btn-dark me-2">Contact Me</button>
-                            <button className="btn btn-dark mt-2">Download CV</button>
+                            <button className="btn btn-light me-2 "><Nav.Link as={Link} to="projects" smooth={true} duration={100} ><b>View My Work</b></Nav.Link></button>
+                            <button className="btn btn-dark me-2 px-4"><Nav.Link as={Link} to="contact" smooth={true} duration={100} className='fs-6 nav-text'>Hire Me</Nav.Link></button>
+                            <button className="btn btn-dark"><Nav.Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</Nav.Link>  </button>
                         </div>
                     </div>
 

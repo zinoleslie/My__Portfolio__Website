@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
+    <>
     <div className='wrapper'>
       <NavigationBar />
 
@@ -29,13 +30,18 @@ const App = () => {
         <div id='contact'>
           <Contact />
         </div>
-
+        
       </main>
 
 
 
-      <Footer />
+<Footer />
     </div>
+
+
+
+    </>
+    
   )
 }
 

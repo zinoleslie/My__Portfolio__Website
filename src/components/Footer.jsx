@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="footer mt-5 py-4 text-center">
+        <footer className="footer text-center ">
             <div className="container">
                 <Nav className="justify-content-center mb-3">
                     <Nav.Item>
@@ -13,10 +13,10 @@ function Footer() {
                 </Nav>
 
                 <div className="social-icons">
-                    <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/zinoleslie" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="icon fs-3  text-white "/>
                     </a>
-                    <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+                    <a href="http://www.linkedin.com/in/gifted-zino-leslie-25a6a9330" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="icon fs-3 ms-2 text-white" />
                     </a>
                 </div>

@@ -14,16 +14,16 @@ const Skills = () => {
                 {/* Frontend Development */}
                 <h3 className='my-3 text-center text-md-start  ' style={{ color: '#FF003D' }}>Frontend Development</h3>
                 <div className="row g-4" style={{paddingInline:'20px'}}>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-6 col-lg-3">
                         <SkillCard image={'../Bootstrap-removebg-preview.png'} title={'Bootstrap'} />
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-6 col-lg-3">
                         <SkillCard image={'../Reacticon-removebg-preview.png'} title={'React'} />
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-6 col-lg-3">
                         <SkillCard image={'../html_icons-removebg-preview.png'} title={'HTML'} />
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-6 col-lg-3">
                         <SkillCard image={'../images-removebg-preview.png'} title={'CSS'} />
                     </div>
                 </div>
@@ -31,18 +31,18 @@ const Skills = () => {
                 {/* Backend Development */}
                 <h3 className='my-3 text-center text-md-start' style={{ color: '#FF003D', marginTop: '50px' }}>Backend Development</h3>
                 <div className="row g-4 "  style={{paddingInline:'20px'}}>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-6 col-lg-3">
                         <SkillCard image={'../nodeImage-removebg-preview.png'} title={'Node'} />
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-6 col-lg-3">
                         <SkillCard image={'../mongodb-removebg-preview.png'} title={'MongoDB'} />
                     </div>
                 </div>
 
                 {/* Tools & Version Control */}
                 <h3 className='my-3 text-center text-md-start' style={{ color: '#FF003D', marginTop: '50px' }}>Tools & Version Control</h3>
-                <div className="row g-4 mb-4" style={{paddingInline:'20px'}}>
-                    <div className="col-6 col-md-3">
+                <div className="row" style={{paddingInline:'20px'}}>
+                    <div className="col-12 col-lg-12">
                         <SkillCard image={'../Git_icon-removebg-preview.png'} title={'Git'} />
                     </div>
                 </div>
