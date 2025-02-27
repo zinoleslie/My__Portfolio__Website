@@ -19,7 +19,7 @@ const Projects = () => {
                 <div className="col-12 col-md-6 d-flex justify-content-center">
                     <Cards
                         title="Voting Application System"
-                        description="A Voting Application System built using React, Node.js, and MongoDB."
+                        description="A sophisticated electoral management platform engineered with React, Node.js, and MongoDB."
                         image="../votingAPP__image.jpg"
                         linkProf={'https://votingapp-frontend-project.onrender.com'}
                     />
@@ -30,6 +30,8 @@ const Projects = () => {
                     <Cards
                         title={'School Management System'}
                         description={'A School Management System built using React, Node.js, and MongoDB.'}
+                        image={'../chizzyKids.jpg'}
+                        linkProf={'https://chizzy-kids-school.onrender.com/'}
 
                     />
                 </div>

@@ -8,7 +8,7 @@ function Footer() {
             <div className="container">
                 <Nav className="justify-content-center mb-3">
                     <Nav.Item>
-                        <Nav.Link href="#top" className="footer-link fs-6 fw-bold"style={{color:'rgb(205, 225, 255)'}} >Back to Top</Nav.Link>
+                        <Nav.Link href="#top" className="footer-link fs-6 fw-bold" style={{color:'rgb(205, 225, 255)'}} >Back to Top</Nav.Link>
                     </Nav.Item>
                 </Nav>
 

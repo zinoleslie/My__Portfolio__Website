@@ -9,7 +9,7 @@ function Cards({image, title, description, linkProf }) {
             <Card.Body>
                 <Card.Title className='d-flex justify-content-between ' style={{fontWeight:'700'}}>{title || "Card Title"}<span><a href={linkProf} target='_blank' className='text-decoration-none text-black' style={{cursor:'pointer'}}><FaExternalLinkAlt/></a></span></Card.Title> 
                 <Card.Text>
-                    { description > 100 ? description.substring(0, 100) + '...' : description || dummytext > 100 ? dummytext.substring(0, 100) + '...' : dummytext} 
+                    { description > 20 ? description.substring(0 , 20) + '...' : description || dummytext} 
                 </Card.Text>
                 <Card.Img variant="top" style={{height:'250px'}} src={image ||"https://howtofunda.com/wp-content/uploads/2024/06/school-building-model.jpg"} />
             </Card.Body>
