@@ -36,7 +36,7 @@ const Home = () => {
 
                     {/* Right Section (Image) */}
                     <div className='col-12 col-md-6 text-center'>
-                        <img src="../Cover_Photo.png" className='img-fluid rounded w-75' alt="My Profile" />
+                        <img src="myPortfolioImage.png" className='img-fluid rounded w-75' alt="My Profile" />
                     </div>
 
                 </div>
